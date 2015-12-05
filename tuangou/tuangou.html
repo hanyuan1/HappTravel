@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+      <title>
+         团购</title>
+      <link rel="stylesheet" href="css/sifr.css" type="text/css" />
+      <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+
+		
+      <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+
+      <style type="text/css">
+<!--
+.STYLE2 {font-family: "汉仪丫丫体简"}
+.STYLE3 {font-size: 18px}
+-->
+      </style>
+</head>
+   <body>
+      <div id="container">
+        <div id="top">
+            <h1 class="STYLE3">
+               <a href="#" title="back to top" class="STYLE2">乐游网</a><span>happytravel</span>            </h1>
+
+            <ul id="nav">
+              <li> <a href="..//11.html">首页</a><span>Back to top</span> </li>
+              <li> <a href="../hot/hot.html">热点</a><span>hot spot</span></li>
+              <li><a href="../star guide/star guide.html">明星导游</a><span>star guide</span></li>
+              <li><a href="../fengjing/fengjing.html">风景介绍</a><span>scenery introduce</span></li>
+              <li><a href="../tuangou/tuangou.html">团购</a><span>group purchase</span></li>
+              <li><a href="../zhuce/zhuce.html">登录注册</a><span>login</span></li>
+              <li><a href="../consult/consult.html">在线问答</a><span>consult</span></li>
+            </ul>
+        </div>
+         </p>
+      </div>
+      </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "">
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="" />
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="http://pic.lvmama.com/styles/v7style/globalV1_0.css" type="text/css" rel="stylesheet"  />
+<link href="http://pic.lvmama.com/styles/super_v2/group.css" type="text/css" rel="stylesheet"  />
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="/super/js/clock.js"></script>
+<script type="text/javascript" src="/super/js/tuan.js"></script>
+<script type="text/javascript">
+function outSinaWeibo(){
+		
+		rnd:new Date().valueOf() 
+		} 
+		var temp = []; 
+		for( var p in param ){ 
+		temp.push(p + '=' + encodeURIComponent( param[p] || '' ) ) 
+		}		 
+		document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src=""></iframe>')
+}
+
+function shareSinaWebo(){
+	var _w = 86 , _h = 16; 
+		var param = { 
+		
+		rnd:new Date().valueOf() 
+		} 
+		var temp = []; 
+		for( var p in param ){ 
+		temp.push(p + '=' + encodeURIComponent( param[p] || '' ) ) 
+		}
+		window.open("http://service.weibo.com/share/share.php?"+temp.join('&'),"_blank","width=615,height=505");
+}
+function shareDouban(){
+	var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e(d.location.href)+'&amp;title='+e(d.title)+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}
+}
+function shareKaixin(){
+	d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(kaixin=window.open('http://www.kaixin001.com/~repaste/repaste.php?&amp;rurl='+escape(d.location.href)+'&amp;rtitle='+escape(d.title)+'&amp;rcontent='+escape(d.title),'kaixin'));kaixin.focus();
+}
+function shareRenRen(){
+	var s=screen;var d = document;var e = encodeURIComponent;if(/xiaonei\.com/.test(d.location))return;var f='http://share.xiaonei.com/share/buttonshare.do?link=',u=d.location,l=d.title,p=[e(u),'&amp;title=',e(l)].join('');function a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();
+}
+</script>
+
+</head>
+<body>
+<!--Maeu Area-->
+<ul>
+  <li id="indexPage"></li>
+  <li class="otherchannel"><a href="http://bbs.lvmama.com/index.html"></a></li>
+  <li class="otherchannel" id="destPage"><a href="http://www.lvmama.com/info"></a></li>
+  <li class="otherchannel" id="placePage"><a href="http://www.lvmama.com/place"></a></li>
+  <li class="otherchannel" id="guidePage"><a target="_blank" href="http://www.lvmama.com/guide/"></a></li>
+  <li class="otherchannel" id="conmentesPage"><a href="http://www.lvmama.com/comment"></a></li>
+</ul>
+<script>
+ $(document).ready(function () {
+	//	
+	checkCookie(); 
+	showMeunTool();
+	readyFun();
+});
+</script>
+
+<!--Content Area-->
+<div class="shortinner">
+	<!--Ad-->
+	<!--Ad-->
+  <div style="margin:0 0 10px;" class="abroadban">
+    
+
+
+	 		<SCRIPT LANGUAGE="JavaScript1.1" SRC="">
+		</SCRIPT>
+  </div>
+
+    <!--leftContent-->
+    <div class="gropu-l-c">
+        <!--循环显示今日的团购产品-->
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="group-bg group-recom">推荐</div>
+                <h1> 
+					<span class="proType"></span><strong>乌镇二日游
+ </strong><a href="b1.html" target="_self">仅售178元！尊享原价480元的杭州、乌镇二日休闲游！一览江南著名景点！泛舟江南水乡四大古镇之一的乌镇！在风景中回忆儿时那些美好的传说！
+
+</a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;178</span><a href="b1.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;480</del></li>
+                            <li>折扣：<em>3.7折</em></li>
+                            <li>节省：<em>&yen;222 </em></li>
+                        </ol>
+ <dl>
+                        	<dt>&nbsp;</dt>
+                        	<dd style="width:93px;">
+								<script type="text/javascript" charset="utf-8"> 
+									outSinaWeibo("http://www.lvmama.com/product/45390","(团购)乐游网");
+								</script>
+                        	</dd>
+                      </dl>                    
+                	</div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：13天6小时<br /><span class="deal-timeleft" num="0" diff="1233867260"  id="counter0"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>136</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_45390">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_45390">
+										<li  class="curImgLI"  > <a href="b1.html" target="2"><img  width=512 height=256 src="photos1/image2.jpg" alt="" /> </li>
+		
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage45390 = new ScrollImage("scrollNum_45390","scrollImg_45390",3,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急：13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>                </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum2">推荐</div></div>
+                <h1> 				    <span class="proType proType3"></span><strong>横店影视城二日游
+ </strong><a href="b2.html" target="_self">国家AAAAA级风景点，仅171元/位！乐享原价458元/位，横店影视城老年金秋二日游（含门票330元、车费、中餐、导游、旅游意外险），历史最低价！行程最丰富！国际化的梦幻之城与快乐之都，带你一起玩转横店！！
+
+</a></h1>
+                <p class="recomment-icon">
+                <!--leftContent-->
+                <div class="g-c-l">
+               	  <div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;171</span><a href="b2.html" target="_self">去看看</a></p>
+                      <ol>
+                       	  <li>原价：<del>&yen;458</del></li>
+                          <li>折扣：<em>3.73折</em></li>
+                          <li>节省：<em>&yen;287</em></li>
+                      </ol>
+ </div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：3天12小时<br /><span class="deal-timeleft" num="1" diff="1233867243"  id="counter1"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>0</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                         	还需10人，<br />本团购成功
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_46409">								</ul>
+								<ul class="scrollImg"  id="scrollImg_46409">
+										<li  class="curImgLI"  > <a href="b2.html" target="2"><img  width=512 height=256 src="201.jpg" alt="" />  </li>
+		
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage46409 = new ScrollImage("scrollNum_46409","scrollImg_46409",4,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急：13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>                  </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum3">推荐</div></div>
+                <h1> 				    <span class="proType proType3"></span><strong>舟山普陀山二日游
+
+ </strong><a href="b3.html" target="_self">仅188元！享原价426元好运普陀二日游！住农家小院有生趣！穿行跨海大桥，移驾普陀山，逍遥快活自己找得到！ </a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;188</span><a href="b3.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;426</del></li>
+                            <li>折扣：<em>4.41折</em></li>
+                            <li>节省：<em>&yen;238 </em></li>
+                        </ol>
+ </div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：<br /><span class="deal-timeleft" num="2" diff="542667228"  id="counter2"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>15</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_46037">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_46037">
+										<li  class="curImgLI"  > <a href="b3.html" target="2"><img  width=512 height=256 src="203.jpg" alt="" />  </li>
+							  </ul>
+							</div>
+	                		<script>
+	                				var scrollImage46037 = new ScrollImage("scrollNum_46037","scrollImg_46037",4,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急：13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>           </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum4">推荐</div></div>
+                <h1> 					<span class="proType proType2"></span><strong>绍兴-鲁迅故居二日游
+ </strong><a href="b4.html" target="_self">(仅售78元，价值348元江南绍兴古城旅游给跟团游！赏东湖、兰亭、沈园、大禹陵人文景点，品江南唯美山水，寻周恩来、鲁迅名人故居，感受博物馆历史风情！ 
+
+</a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;78</span><a href="b4.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;358</del></li>
+                            <li>折扣：<em>202折</em></li>
+                            <li>节省：<em>&yen;270 </em></li>
+                        </ol>
+ <dl><dd style="width:93px;">
+				  <script type="text/javascript" charset="utf-8"> 
+									outSinaWeibo("http://www.lvmama.com/product/45760","(团购)余姚阳明温泉山庄蒙古烧烤节 烤肉+温泉的完美组合，使阁下尽享“悠然见南山”的休闲");
+								</script>
+ </dd>
+                            <dd>&nbsp;</dd>
+                      </dl>                    
+                	</div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：<br /><span class="deal-timeleft" num="3" diff="369867214"  id="counter3"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>29</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_45760">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_45760">
+										<li  class="curImgLI"  > <a href="b4.html"  
+target="2"><img  width=512 height=256 src="204.jpg" alt="" />	
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage45760 = new ScrollImage("scrollNum_45760","scrollImg_45760",3,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证 
+码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急： 
+13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到 
+算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>  
+              </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum5">推荐</div></div>
+                <h1> 					<span class="proType proType2"></span><strong>浙北大峡谷二日游
+ </strong><a href="b6.html" target="_self">(浙北大峡谷旅游套票仅售288元享，享原价712元浙北大峡谷+临安神龙川自由行套餐一份，包含：浙北大峡谷门票2张+神龙川门票2张+表演门票2张+度假村住宿一晚！统统不要，卸下包袱一起来吧，去大自然绿色氧吧里尽情的深呼吸！</a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;288</span><a href="b6.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;712</del></li>
+                            <li>折扣：<em>4折</em></li>
+                            <li>节省：<em>&yen;424 </em></li>
+                        </ol>
+ </div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：<br /><span class="deal-timeleft" num="4" diff="456267199"  id="counter4"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>10</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_46176">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_46176">
+										<li  class="curImgLI"  > <a href="b6.html"  
+target="2"><img  width=512 height=256 src="206.jpg" alt="" />
+ </li>
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage46176 = new ScrollImage("scrollNum_46176","scrollImg_46176",3,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证 
+码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急： 
+13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到 
+算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>  
+             </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum6">推荐</div></div>
+                <h1> 					<span class="proType proType5"></span><strong>雁荡山二日游
+ </strong><a href="b7.html" target="_self">仅售380元享，享原价659元的雁荡山跟团游，浏览大龙湫，灵峰等景点</a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;380</span><a href="b7.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;659</del></li>
+                            <li>折扣：<em>5.76折</em></li>
+                            <li>节省：<em>&yen;279 </em></li>
+                        </ol>
+ </div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：<br /><span class="deal-timeleft" num="5" diff="197067184"  id="counter5"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>28</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_45639">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_45639">
+										<li  class="curImgLI"  > <a href="b7.html"  
+target="2"><img  width=512 height=256 src="207.jpg" alt="" />
+</li>
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage45639 = new ScrollImage("scrollNum_45639","scrollImg_45639",3,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证 
+码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急： 
+13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到 
+算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>  
+                </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    	<!---product-->
+        
+    	<!---product-->
+        <div class="group-bor">
+        	<div class="group-pro">
+        			<div class="wid"><div class="proNum proNum8">推荐</div></div>
+                <h1> 					<span class="proType proType5"></span><strong>浙东大峡谷二日游
+ </strong><a href="b8.html" target="_self">(仅售298元！尊享原价880元的『江南小九寨沟』美誉的浙东大峡谷、白溪漂流、宁海尚高国际商务旅店二日游套餐一份：浙东大峡谷景区门票1张+白溪漂流门票1张+宁海尚高国际商务旅店标间住宿一晚+自助早餐1份+免费停车+免费宽带 </a></h1>
+                <p class="recomment-icon"></p>
+                <!--leftContent-->
+                <div class="g-c-l">
+                	<div class="group-infor">
+                    	<p class="price-look group-bg"><span>&yen;298</span><a href="b8.html" target="_self">去看看</a></p>
+                        <ol>
+                        	<li>原价：<del>&yen;880</del></li>
+                            <li>折扣：<em>3.39折</em></li>
+                            <li>节省：<em>&yen;582 </em></li>
+                        </ol>
+ </div>
+                    <!--otherBg-->
+                    <p class="other-bgcolor"><span class="group-bg"></span>距离团购结束还有：<br /><span class="deal-timeleft" num="7" diff="110667154"  id="counter7"></span></p>
+                    <!--otherBg-->
+                    <div class="other-bgcolor bug-cart">
+                    	<p><strong>12</strong>人已购买成功</p>
+                        <span class="group-bg"></span>
+                        	团购已成功，<br />可继续购买…
+                    </div>
+                </div>
+                <!--rightContent-->
+                <div class="g-c-r">                	 
+	                		<div class="scrollDiv">
+								<ul class="scrollNum" id="scrollNum_45682">
+										
+								</ul>
+								<ul class="scrollImg"  id="scrollImg_45682">
+										<li  class="curImgLI"  > <a href="b8.html"  
+target="2"><img  width=512 height=256 src="208.jpg" alt="" />
+ </li>
+										
+								</ul>
+							</div>
+	                		<script>
+	                				var scrollImage45682 = new ScrollImage("scrollNum_45682","scrollImg_45682",3,3000);
+	                		</script>
+<p class="prompt-infor"></p> 
+<dl><dt>温馨提示:</dt> 
+<dd>有效期至2011年12月30日；
+</dd> 
+<dd>请提前三天预约，预约时请将联系电话、姓名、身份证号和乐游券验证 
+码报给工作人员，以便为您安排车位；
+</dd> 
+<dd>预约时间：周一至周五 9:00——17:00。
+ </dd> 
+<dd>预约电话 4006-020-116 021-38980486 021-60498962 应急： 
+13818311116
+ </dd>
+<dd>如若改期请在出团前24小时以上，电话通知旅行社改期，否则人未到 
+算自动放弃
+ </dd> 
+</dd> 
+<dd>儿童价请咨询旅行社
+ </dd>
+</dl>  
+               </div>
+                <p class="clear"></p>
+            </div>
+        </div>
+    </div>
+    <!--rightContent-->
+    <div class="gropu-r-c">
+    	<div class="gropu-r-bg">
+           	<!--显示团公告-->
+<h4></h4>
+<p class="bottom-border">
+　　<br /><br />
+
+</p>
+ 			<h4>乐游网旅游团购承诺</h4>
+            <ol class="">
+                <li><span class="group-bg"></span>优惠承诺 放心预定</li>
+                <li><span class="group-bg"></span>乐游网入园保障</li>
+                <li><span class="group-bg"></span>当季新颖产品</li>
+                <li><span class="group-bg"></span>旅游热门目的地</li>
+            </ol>
+            <h4>客户服务</h4>
+            <ul class="bottom-border">
+                <li>服务时间：8:00-24:00</li>
+                <li>客服热线：<strong>400 666 6699</strong></li>
+                <li><br />
+              </li>
+            </ul>
+      </div>
+<!--business-->
+<!--<dl class="business">
+        	<dt>商务合作</dt>
+            <dd class="right-margin"><img src="http://pic.lvmama.com/img/test/img1.jpg" /></dd>
+            <dd><img src="http://pic.lvmama.com/img/test/img2.jpg" /></dd>
+            <dd class="right-margin"><img src="http://pic.lvmama.com/img/test/img3.jpg" /></dd>
+            <dd><img src="http://pic.lvmama.com/img/test/img4.jpg" /></dd>
+</dl>    -->
+
+
+	 	<!-- 右横幅 -->
+	 	<!-- 右横幅/End -->
+    </div>
+    <!--clear-->
+    <p class="clear"></p>
+</div>
+</body>
+</html>
+
+   </body>
+</html>
