@@ -16,8 +16,12 @@
 .STYLE2 {font-family: "汉仪丫丫体简"}
 .STYLE3 {font-size: 18px}
 -->
+.shortinner{position:relative; top:150px}
       </style>
-</head>
+       <link href="http://pic.lvmama.com/styles/v7style/globalV1_0.css" type="text/css" rel="stylesheet"  />
+       <link href="http://pic.lvmama.com/styles/super_v2/group.css" type="text/css" rel="stylesheet"  />
+
+   </head>
    <body>
       <div id="container">
         <div id="top">
@@ -30,79 +34,21 @@
               <li><a href="../star guide/star guide.html">明星导游</a><span>star guide</span></li>
               <li><a href="../fengjing/fengjing.html">风景介绍</a><span>scenery introduce</span></li>
               <li><a href="../tuangou/tuangou.html">团购</a><span>group purchase</span></li>
-              <li><a href="../zhuce/zhuce.html">登录注册</a><span>login</span></li>
+              <li><a href="../zhuce/register2.html">登录注册</a><span>login</span></li>
               <li><a href="../consult/consult.html">在线问答</a><span>consult</span></li>
             </ul>
         </div>
-         </p>
-      </div>
-      </div>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "">
-<html xmlns="">
-<head>
-<meta http-equiv="Content-Type" content="" />
-<title></title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link href="http://pic.lvmama.com/styles/v7style/globalV1_0.css" type="text/css" rel="stylesheet"  />
-<link href="http://pic.lvmama.com/styles/super_v2/group.css" type="text/css" rel="stylesheet"  />
-<script type="text/javascript" src=""></script>
-<script type="text/javascript" src="/super/js/clock.js"></script>
-<script type="text/javascript" src="/super/js/tuan.js"></script>
-<script type="text/javascript">
-function outSinaWeibo(){
-		
-		rnd:new Date().valueOf() 
-		} 
-		var temp = []; 
-		for( var p in param ){ 
-		temp.push(p + '=' + encodeURIComponent( param[p] || '' ) ) 
-		}		 
-		document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src=""></iframe>')
-}
-
-function shareSinaWebo(){
-	var _w = 86 , _h = 16; 
-		var param = { 
-		
-		rnd:new Date().valueOf() 
-		} 
-		var temp = []; 
-		for( var p in param ){ 
-		temp.push(p + '=' + encodeURIComponent( param[p] || '' ) ) 
-		}
-		window.open("http://service.weibo.com/share/share.php?"+temp.join('&'),"_blank","width=615,height=505");
-}
-function shareDouban(){
-	var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e(d.location.href)+'&amp;title='+e(d.title)+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}
-}
-function shareKaixin(){
-	d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(kaixin=window.open('http://www.kaixin001.com/~repaste/repaste.php?&amp;rurl='+escape(d.location.href)+'&amp;rtitle='+escape(d.title)+'&amp;rcontent='+escape(d.title),'kaixin'));kaixin.focus();
-}
-function shareRenRen(){
-	var s=screen;var d = document;var e = encodeURIComponent;if(/xiaonei\.com/.test(d.location))return;var f='http://share.xiaonei.com/share/buttonshare.do?link=',u=d.location,l=d.title,p=[e(u),'&amp;title=',e(l)].join('');function a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();
-}
-</script>
-
-</head>
-<body>
 <!--Maeu Area-->
-<ul>
+
+       <!--   <ul>
   <li id="indexPage"></li>
   <li class="otherchannel"><a href="http://bbs.lvmama.com/index.html"></a></li>
   <li class="otherchannel" id="destPage"><a href="http://www.lvmama.com/info"></a></li>
   <li class="otherchannel" id="placePage"><a href="http://www.lvmama.com/place"></a></li>
   <li class="otherchannel" id="guidePage"><a target="_blank" href="http://www.lvmama.com/guide/"></a></li>
   <li class="otherchannel" id="conmentesPage"><a href="http://www.lvmama.com/comment"></a></li>
-</ul>
-<script>
- $(document).ready(function () {
-	//	
-	checkCookie(); 
-	showMeunTool();
-	readyFun();
-});
-</script>
+</ul>-->
+
 
 <!--Content Area-->
 <div class="shortinner">
@@ -112,8 +58,7 @@ function shareRenRen(){
     
 
 
-	 		<SCRIPT LANGUAGE="JavaScript1.1" SRC="">
-		</SCRIPT>
+
   </div>
 
     <!--leftContent-->
@@ -141,9 +86,7 @@ function shareRenRen(){
  <dl>
                         	<dt>&nbsp;</dt>
                         	<dd style="width:93px;">
-								<script type="text/javascript" charset="utf-8"> 
-									outSinaWeibo("http://www.lvmama.com/product/45390","(团购)乐游网");
-								</script>
+
                         	</dd>
                       </dl>                    
                 	</div>
@@ -167,9 +110,7 @@ function shareRenRen(){
 		
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage45390 = new ScrollImage("scrollNum_45390","scrollImg_45390",3,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -226,9 +167,7 @@ function shareRenRen(){
 		
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage46409 = new ScrollImage("scrollNum_46409","scrollImg_46409",4,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -285,9 +224,7 @@ function shareRenRen(){
 										<li  class="curImgLI"  > <a href="b3.html" target="2"><img  width=512 height=256 src="203.jpg" alt="" />  </li>
 							  </ul>
 							</div>
-	                		<script>
-	                				var scrollImage46037 = new ScrollImage("scrollNum_46037","scrollImg_46037",4,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -326,10 +263,7 @@ function shareRenRen(){
                             <li>节省：<em>&yen;270 </em></li>
                         </ol>
  <dl><dd style="width:93px;">
-				  <script type="text/javascript" charset="utf-8"> 
-									outSinaWeibo("http://www.lvmama.com/product/45760","(团购)余姚阳明温泉山庄蒙古烧烤节 烤肉+温泉的完美组合，使阁下尽享“悠然见南山”的休闲");
-								</script>
- </dd>
+
                             <dd>&nbsp;</dd>
                       </dl>                    
                 	</div>
@@ -353,9 +287,7 @@ function shareRenRen(){
 target="2"><img  width=512 height=256 src="204.jpg" alt="" />	
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage45760 = new ScrollImage("scrollNum_45760","scrollImg_45760",3,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -417,9 +349,7 @@ target="2"><img  width=512 height=256 src="206.jpg" alt="" />
  </li>
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage46176 = new ScrollImage("scrollNum_46176","scrollImg_46176",3,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -481,9 +411,7 @@ target="2"><img  width=512 height=256 src="207.jpg" alt="" />
 </li>
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage45639 = new ScrollImage("scrollNum_45639","scrollImg_45639",3,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -548,9 +476,7 @@ target="2"><img  width=512 height=256 src="208.jpg" alt="" />
 										
 								</ul>
 							</div>
-	                		<script>
-	                				var scrollImage45682 = new ScrollImage("scrollNum_45682","scrollImg_45682",3,3000);
-	                		</script>
+
 <p class="prompt-infor"></p> 
 <dl><dt>温馨提示:</dt> 
 <dd>有效期至2011年12月30日；
@@ -615,8 +541,5 @@ target="2"><img  width=512 height=256 src="208.jpg" alt="" />
     <!--clear-->
     <p class="clear"></p>
 </div>
-</body>
-</html>
-
    </body>
 </html>

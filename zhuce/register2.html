@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>登录注册</title>
+        <link rel="stylesheet" href="../hot/css/sifr.css" type="text/css" />
+        <link rel="stylesheet" href="../hot/css/stylesheet.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../hot/css/jquery.lightbox-0.5.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css2/style.css" />
+        <link rel="stylesheet" type="text/css" href="css2/animate-custom.css" />
+        <style type="text/css">
+            <!--
+            .STYLE2 {font-family: "汉仪丫丫体简"}
+            .STYLE3 {font-size: 18px}
+            -->
+
+            #container_demo{top:200px; position:relative}
+
+        </style>
+
+    </head>
+<body>
+<div id="container">
+    <div id="top">
+        <h1 class="STYLE3">
+            <a href="#" title="back to top" class="STYLE2">乐游网</a><span>happytravel</span>            </h1>
+
+        <ul id="nav">
+            <li> <a href="../11.html">首页</a><span>Back to top</span> </li>
+            <li> <a href="../hot/hot.html">热点</a><span>hot spot</span></li>
+            <li><a href="../star guide/star guide.html">明星导游</a><span>star guide</span></li>
+            <li><a href="../fengjing/fengjing.html">风景介绍</a><span>scenery introduce</span></li>
+            <li><a href="../tuangou/tuangou.html">团购</a><span>group purchase</span></li>
+            <li><a href="../zhuce/register2.html">登录注册</a><span>login</span></li>
+            <li><a href="../consult/consult.html">在线问答</a><span>consult</span></li>
+        </ul>
+    </div>
+    <div id ="container_demo" >
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form  action="mysuperscript.php" autocomplete="on">
+
+                        <p>
+                            <label for="username" class="uname" data-icon="u" > 请输入您的邮箱或者用户名 </label>
+                            <input id="username" name="username" required="required" type="text" placeholder="username or emailaddress"/>
+                        </p>
+                        <p>
+                            <label for="password" class="youpasswd" data-icon="p"> 请输入您的密码 </label>
+                            <input id="password" name="password" required="required" type="password" placeholder="password" />
+                        </p>
+                        <p class="keeplogin">
+                            <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                            <label for="loginkeeping">使我一直在线上</label>
+                        </p>
+                        <p class="login button">
+                            <input type="submit" value="登录" />
+                        </p>
+                        <p class="change_link">
+                            还不是我们的会员 ?
+                            <a href="#toregister" class="to_register">加入!</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div id="register" class="animate form">
+                    <form  action="mysuperscript.php" autocomplete="on">
+                        <p>
+                            <label for="usernamesignup" class="uname" data-icon="u">您的用户名</label>
+                            <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="username" />
+                        </p>
+                        <p>
+                            <label for="emailsignup" class="youmail" data-icon="e" > 您的邮箱</label>
+                            <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="email"/>
+                        </p>
+                        <p>
+                            <label for="passwordsignup" class="youpasswd" data-icon="p">您的密码 </label>
+                            <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="password"/>
+                        </p>
+                        <p>
+                            <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">请确认您的密码 </label>
+                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="confirm password"/>
+                        </p>
+                        <p class="signin button">
+                            <input type="submit" value="注册"/>
+                        </p>
+                        <p class="change_link">
+                            已经是会员?
+                            <a href="#tologin" class="to_register"> 登录</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+</div>
+</body>
+</html>
